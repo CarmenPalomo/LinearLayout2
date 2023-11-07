@@ -2,61 +2,62 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="410dp"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
 
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="100dp"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:layout_weight="1"
         android:src="@drawable/circulocuadrado" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="82dp"
-        android:layout_height="32dp"
-        android:layout_marginHorizontal="100dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="-220dp"
-        android:layout_marginRight="200dp"
-        android:layout_weight="1"
-        android:text="Asunto"
-        android:textColor="#AAAAAA" />
+    <LinearLayout
+        android:layout_width="140dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="120dp"
+        >
 
-    <TextView
-        android:id="@+id/textView4"
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Asunto"
+            android:textColor="#AAAAAA" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contenido"
+            android:textColor="#AAAAAA" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="46dp"
-        android:layout_marginLeft="290dp"
-        android:layout_marginTop="-100dp"
-        android:layout_weight="1"
-        android:text="Fecha"
-        android:textColor="#AAAAAA" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="120dp"
+        >
 
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha"
+            android:textColor="#AAAAAA" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="132dp"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="100dp"
-        android:layout_marginTop="-75dp"
-        android:layout_weight="1"
-        android:text="Contenido"
-        android:textColor="#AAAAAA" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="290dp"
-        android:layout_marginTop="-80dp"
-        android:layout_weight="1"
-        android:text="Estrellita"
-        android:textColor="#AAAAAA" />
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estrellita"
+            android:textColor="#AAAAAA" />
+    </LinearLayout>
 
 
 </LinearLayout>
